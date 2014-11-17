@@ -87,19 +87,18 @@
 											<string key="NSFrameSize">{659, 314}</string>
 											<reference key="NSSuperview" ref="492812198"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="724488074"/>
+											<reference key="NSNextKeyView" ref="672019453"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 											<object class="NSTextContainer" key="NSTextContainer" id="584323743">
 												<object class="NSLayoutManager" key="NSLayoutManager">
 													<object class="NSTextStorage" key="NSTextStorage">
 														<object class="NSMutableString" key="NSString">
-															<bytes key="NS.bytes">Y29weSBqc29uIGhlcmUgb3IgZ2V0IGpzb24gYnkgVVJMCj09PT09PT09PT09PT09PT09PT0KMS7lnKjm
-iopqc29u5a2X56ym5Liy5aSN5Yi25Yiw5q2k5aSE77yM5oiW6ICF5aGr5YaZQVBJIFVSTOiOt+WPlkpT
-T07jgIIKMi7ku4XnlJ/miJBBUkPlr7nosaEKMy7mlK/mjIE8TlNDb2Rpbmc+5Y2P6K6uCjQu5a2X5YW4
-5a+56LGh5bCG55Sf5oiQ5ZCO57yA5Li6RW50aXR555qE57G744CCCjUu5b2T5pWw57uE5oiQ5ZGY5pyJ
-5LiU5Y+q5pyJ5a2X5YW477yM5LiU5omA5pyJ5YWD57Sg5qC85byP57uf5LiA5pe277yM5bCG55Sf5oiQ
-TlNNdXRhYmxlQXJyYXnnsbvlnovnmoTmiJDlkZjlj5jph4/vvIzlubbnlJ/miJDnm7jlupTlrp7kvZPn
-sbvjgII</bytes>
+															<bytes key="NS.bytes">Y29weSBqc29uIGhlcmUKPT09PT09PT09PT09PT09PT09PQoxLuWcqOaKimpzb27lrZfnrKbkuLLlpI3l
+iLbliLDmraTlpITjgIIKMi7ku4XnlJ/miJBBUkPlr7nosaEKMy7mlK/mjIE8TlNDb2Rpbmc+5Y2P6K6u
+CjQu5a2X5YW45a+56LGh5bCG55Sf5oiQ5ZCO57yA5Li6RW50aXR555qE57G744CCCjUu5b2T5pWw57uE
+5oiQ5ZGY5pyJ5LiU5Y+q5pyJ5a2X5YW477yM5LiU5omA5pyJ5YWD57Sg5qC85byP57uf5LiA5pe277yM
+5bCG55Sf5oiQTlNNdXRhYmxlQXJyYXnnsbvlnovnmoTmiJDlkZjlj5jph4/vvIzlubbnlJ/miJDnm7jl
+upTlrp7kvZPnsbvjgII</bytes>
 														</object>
 														<array class="NSMutableArray" key="NSAttributes">
 															<dictionary>
@@ -160,7 +159,7 @@ sbvjgII</bytes>
 															</dictionary>
 														</array>
 														<object class="NSMutableData" key="NSAttributeInfo">
-															<bytes key="NS.bytes">OACPAQE</bytes>
+															<bytes key="NS.bytes">JQB9AQ</bytes>
 														</object>
 														<nil key="NSDelegate"/>
 													</object>
@@ -293,7 +292,7 @@ sbvjgII</bytes>
 							<string key="NSFrame">{{20, 123}, {661, 316}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="672019453"/>
+							<reference key="NSNextKeyView" ref="492812198"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSsFlags">133138</int>
 							<reference key="NSVScroller" ref="724488074"/>
@@ -1849,7 +1848,7 @@ sbvjgII</bytes>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../AutomaticCoder/JSONWindowController.h</string>
+						<string key="minorKey">../JsonCompletor/JSONWindowController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -1880,7 +1879,7 @@ sbvjgII</bytes>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../AutomaticCoder/JSONWindowController.m</string>
+						<string key="minorKey">../JsonCompletor/JSONWindowController.m</string>
 					</object>
 				</object>
 			</array>

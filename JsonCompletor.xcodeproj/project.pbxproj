@@ -7,45 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095C48F81A19CA5600C8EF65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C48E61A19CA5600C8EF65 /* AppDelegate.m */; };
+		095C48F91A19CA5600C8EF65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 095C48E71A19CA5600C8EF65 /* InfoPlist.strings */; };
+		095C48FA1A19CA5600C8EF65 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095C48E91A19CA5600C8EF65 /* MainMenu.xib */; };
+		095C48FB1A19CA5600C8EF65 /* json.tq1 in Resources */ = {isa = PBXBuildFile; fileRef = 095C48EB1A19CA5600C8EF65 /* json.tq1 */; };
+		095C48FC1A19CA5600C8EF65 /* json.tq2 in Resources */ = {isa = PBXBuildFile; fileRef = 095C48EC1A19CA5600C8EF65 /* json.tq2 */; };
+		095C48FD1A19CA5600C8EF65 /* JsonCompletor-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 095C48ED1A19CA5600C8EF65 /* JsonCompletor-Info.plist */; };
+		095C48FE1A19CA5600C8EF65 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C48F01A19CA5600C8EF65 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		095C48FF1A19CA5600C8EF65 /* JSONPropertyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C48F21A19CA5600C8EF65 /* JSONPropertyWindowController.m */; };
+		095C49001A19CA5600C8EF65 /* JSONPropertyWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095C48F31A19CA5600C8EF65 /* JSONPropertyWindowController.xib */; };
+		095C49011A19CA5600C8EF65 /* JSONWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C48F51A19CA5600C8EF65 /* JSONWindowController.m */; };
+		095C49021A19CA5600C8EF65 /* JSONWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095C48F61A19CA5600C8EF65 /* JSONWindowController.xib */; };
+		095C49031A19CA5600C8EF65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C48F71A19CA5600C8EF65 /* main.m */; };
 		09BE794B1A160C4500C9BAA4 /* caicai.icns in Resources */ = {isa = PBXBuildFile; fileRef = 09BE794A1A160C4500C9BAA4 /* caicai.icns */; };
-		09BE79661A161AE500C9BAA4 /* json.tq1 in Resources */ = {isa = PBXBuildFile; fileRef = 09BE79641A161AE500C9BAA4 /* json.tq1 */; };
-		09BE79671A161AE500C9BAA4 /* json.tq2 in Resources */ = {isa = PBXBuildFile; fileRef = 09BE79651A161AE500C9BAA4 /* json.tq2 */; };
-		43368AA215E4AB5D006AA4F4 /* JSONPropertyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43368AA015E4AB5D006AA4F4 /* JSONPropertyWindowController.m */; };
-		43368AA315E4AB5D006AA4F4 /* JSONPropertyWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43368AA115E4AB5D006AA4F4 /* JSONPropertyWindowController.xib */; };
-		4349430C15E1D6ED006A427A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4349430B15E1D6ED006A427A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4349431A15E1D7B3006A427A /* JSONWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4349431815E1D7B3006A427A /* JSONWindowController.m */; };
-		4349431B15E1D7B3006A427A /* JSONWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4349431915E1D7B3006A427A /* JSONWindowController.xib */; };
 		438EDC2815E1D08700D6B752 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438EDC2715E1D08700D6B752 /* Cocoa.framework */; };
-		438EDC3215E1D08700D6B752 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 438EDC3015E1D08700D6B752 /* InfoPlist.strings */; };
-		438EDC3415E1D08700D6B752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 438EDC3315E1D08700D6B752 /* main.m */; };
-		438EDC3B15E1D08700D6B752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 438EDC3A15E1D08700D6B752 /* AppDelegate.m */; };
-		438EDC3E15E1D08800D6B752 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438EDC3C15E1D08800D6B752 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095C48E51A19CA5600C8EF65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		095C48E61A19CA5600C8EF65 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		095C48E81A19CA5600C8EF65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		095C48EA1A19CA5600C8EF65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		095C48EB1A19CA5600C8EF65 /* json.tq1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.tq1; sourceTree = "<group>"; };
+		095C48EC1A19CA5600C8EF65 /* json.tq2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.tq2; sourceTree = "<group>"; };
+		095C48ED1A19CA5600C8EF65 /* JsonCompletor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JsonCompletor-Info.plist"; sourceTree = "<group>"; };
+		095C48EE1A19CA5600C8EF65 /* JsonCompletor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JsonCompletor-Prefix.pch"; sourceTree = "<group>"; };
+		095C48EF1A19CA5600C8EF65 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		095C48F01A19CA5600C8EF65 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		095C48F11A19CA5600C8EF65 /* JSONPropertyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONPropertyWindowController.h; sourceTree = "<group>"; };
+		095C48F21A19CA5600C8EF65 /* JSONPropertyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONPropertyWindowController.m; sourceTree = "<group>"; };
+		095C48F31A19CA5600C8EF65 /* JSONPropertyWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSONPropertyWindowController.xib; sourceTree = "<group>"; };
+		095C48F41A19CA5600C8EF65 /* JSONWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONWindowController.h; sourceTree = "<group>"; };
+		095C48F51A19CA5600C8EF65 /* JSONWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONWindowController.m; sourceTree = "<group>"; };
+		095C48F61A19CA5600C8EF65 /* JSONWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSONWindowController.xib; sourceTree = "<group>"; };
+		095C48F71A19CA5600C8EF65 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09BE794A1A160C4500C9BAA4 /* caicai.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = caicai.icns; sourceTree = "<group>"; };
-		09BE79641A161AE500C9BAA4 /* json.tq1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.tq1; sourceTree = "<group>"; };
-		09BE79651A161AE500C9BAA4 /* json.tq2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.tq2; sourceTree = "<group>"; };
-		43368A9F15E4AB5D006AA4F4 /* JSONPropertyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONPropertyWindowController.h; sourceTree = "<group>"; };
-		43368AA015E4AB5D006AA4F4 /* JSONPropertyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONPropertyWindowController.m; sourceTree = "<group>"; };
-		43368AA115E4AB5D006AA4F4 /* JSONPropertyWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSONPropertyWindowController.xib; sourceTree = "<group>"; };
-		4349430A15E1D6ED006A427A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		4349430B15E1D6ED006A427A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		4349431715E1D7B3006A427A /* JSONWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONWindowController.h; sourceTree = "<group>"; };
-		4349431815E1D7B3006A427A /* JSONWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONWindowController.m; sourceTree = "<group>"; };
-		4349431915E1D7B3006A427A /* JSONWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSONWindowController.xib; sourceTree = "<group>"; };
 		438EDC2315E1D08700D6B752 /* JsonCompletor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonCompletor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438EDC2715E1D08700D6B752 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		438EDC2A15E1D08700D6B752 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		438EDC2B15E1D08700D6B752 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		438EDC2C15E1D08700D6B752 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		438EDC2F15E1D08700D6B752 /* JsonCompletor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JsonCompletor-Info.plist"; sourceTree = "<group>"; };
-		438EDC3115E1D08700D6B752 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		438EDC3315E1D08700D6B752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		438EDC3515E1D08700D6B752 /* JsonCompletor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JsonCompletor-Prefix.pch"; sourceTree = "<group>"; };
-		438EDC3915E1D08700D6B752 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		438EDC3A15E1D08700D6B752 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		438EDC3D15E1D08800D6B752 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +61,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095C48E41A19CA5600C8EF65 /* JsonCompletor */ = {
+			isa = PBXGroup;
+			children = (
+				095C48E51A19CA5600C8EF65 /* AppDelegate.h */,
+				095C48E61A19CA5600C8EF65 /* AppDelegate.m */,
+				095C48E91A19CA5600C8EF65 /* MainMenu.xib */,
+				095C48EB1A19CA5600C8EF65 /* json.tq1 */,
+				095C48EC1A19CA5600C8EF65 /* json.tq2 */,
+				095C48EF1A19CA5600C8EF65 /* JSONKit.h */,
+				095C48F01A19CA5600C8EF65 /* JSONKit.m */,
+				095C48F11A19CA5600C8EF65 /* JSONPropertyWindowController.h */,
+				095C48F21A19CA5600C8EF65 /* JSONPropertyWindowController.m */,
+				095C48F31A19CA5600C8EF65 /* JSONPropertyWindowController.xib */,
+				095C48F41A19CA5600C8EF65 /* JSONWindowController.h */,
+				095C48F51A19CA5600C8EF65 /* JSONWindowController.m */,
+				095C48F61A19CA5600C8EF65 /* JSONWindowController.xib */,
+				095C49041A19CA8100C8EF65 /* Supporting Files */,
+			);
+			path = JsonCompletor;
+			sourceTree = "<group>";
+		};
+		095C49041A19CA8100C8EF65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				095C48E71A19CA5600C8EF65 /* InfoPlist.strings */,
+				095C48ED1A19CA5600C8EF65 /* JsonCompletor-Info.plist */,
+				095C48EE1A19CA5600C8EF65 /* JsonCompletor-Prefix.pch */,
+				095C48F71A19CA5600C8EF65 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		438EDC1815E1D08700D6B752 = {
 			isa = PBXGroup;
 			children = (
 				09BE794A1A160C4500C9BAA4 /* caicai.icns */,
-				438EDC2D15E1D08700D6B752 /* AutomaticCoder */,
+				095C48E41A19CA5600C8EF65 /* JsonCompletor */,
 				438EDC2615E1D08700D6B752 /* Frameworks */,
 				438EDC2415E1D08700D6B752 /* Products */,
 			);
@@ -95,38 +128,6 @@
 				438EDC2C15E1D08700D6B752 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		438EDC2D15E1D08700D6B752 /* AutomaticCoder */ = {
-			isa = PBXGroup;
-			children = (
-				4349430A15E1D6ED006A427A /* JSONKit.h */,
-				4349430B15E1D6ED006A427A /* JSONKit.m */,
-				438EDC3915E1D08700D6B752 /* AppDelegate.h */,
-				438EDC3A15E1D08700D6B752 /* AppDelegate.m */,
-				438EDC3C15E1D08800D6B752 /* MainMenu.xib */,
-				4349431715E1D7B3006A427A /* JSONWindowController.h */,
-				4349431815E1D7B3006A427A /* JSONWindowController.m */,
-				4349431915E1D7B3006A427A /* JSONWindowController.xib */,
-				43368A9F15E4AB5D006AA4F4 /* JSONPropertyWindowController.h */,
-				43368AA015E4AB5D006AA4F4 /* JSONPropertyWindowController.m */,
-				43368AA115E4AB5D006AA4F4 /* JSONPropertyWindowController.xib */,
-				09BE79641A161AE500C9BAA4 /* json.tq1 */,
-				09BE79651A161AE500C9BAA4 /* json.tq2 */,
-				438EDC2E15E1D08700D6B752 /* Supporting Files */,
-			);
-			path = AutomaticCoder;
-			sourceTree = "<group>";
-		};
-		438EDC2E15E1D08700D6B752 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				438EDC2F15E1D08700D6B752 /* JsonCompletor-Info.plist */,
-				438EDC3015E1D08700D6B752 /* InfoPlist.strings */,
-				438EDC3315E1D08700D6B752 /* main.m */,
-				438EDC3515E1D08700D6B752 /* JsonCompletor-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,13 +181,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438EDC3215E1D08700D6B752 /* InfoPlist.strings in Resources */,
-				09BE79661A161AE500C9BAA4 /* json.tq1 in Resources */,
-				438EDC3E15E1D08800D6B752 /* MainMenu.xib in Resources */,
-				4349431B15E1D7B3006A427A /* JSONWindowController.xib in Resources */,
-				43368AA315E4AB5D006AA4F4 /* JSONPropertyWindowController.xib in Resources */,
+				095C48F91A19CA5600C8EF65 /* InfoPlist.strings in Resources */,
+				095C48FB1A19CA5600C8EF65 /* json.tq1 in Resources */,
+				095C49021A19CA5600C8EF65 /* JSONWindowController.xib in Resources */,
+				095C48FC1A19CA5600C8EF65 /* json.tq2 in Resources */,
 				09BE794B1A160C4500C9BAA4 /* caicai.icns in Resources */,
-				09BE79671A161AE500C9BAA4 /* json.tq2 in Resources */,
+				095C49001A19CA5600C8EF65 /* JSONPropertyWindowController.xib in Resources */,
+				095C48FD1A19CA5600C8EF65 /* JsonCompletor-Info.plist in Resources */,
+				095C48FA1A19CA5600C8EF65 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,29 +199,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438EDC3415E1D08700D6B752 /* main.m in Sources */,
-				438EDC3B15E1D08700D6B752 /* AppDelegate.m in Sources */,
-				4349430C15E1D6ED006A427A /* JSONKit.m in Sources */,
-				4349431A15E1D7B3006A427A /* JSONWindowController.m in Sources */,
-				43368AA215E4AB5D006AA4F4 /* JSONPropertyWindowController.m in Sources */,
+				095C49031A19CA5600C8EF65 /* main.m in Sources */,
+				095C48F81A19CA5600C8EF65 /* AppDelegate.m in Sources */,
+				095C48FF1A19CA5600C8EF65 /* JSONPropertyWindowController.m in Sources */,
+				095C49011A19CA5600C8EF65 /* JSONWindowController.m in Sources */,
+				095C48FE1A19CA5600C8EF65 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		438EDC3015E1D08700D6B752 /* InfoPlist.strings */ = {
+		095C48E71A19CA5600C8EF65 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				438EDC3115E1D08700D6B752 /* en */,
+				095C48E81A19CA5600C8EF65 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		438EDC3C15E1D08800D6B752 /* MainMenu.xib */ = {
+		095C48E91A19CA5600C8EF65 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				438EDC3D15E1D08800D6B752 /* en */,
+				095C48EA1A19CA5600C8EF65 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -283,8 +285,8 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutomaticCoder/JsonCompletor-Prefix.pch";
-				INFOPLIST_FILE = "AutomaticCoder/JsonCompletor-Info.plist";
+				GCC_PREFIX_HEADER = "JsonCompletor/JsonCompletor-Prefix.pch";
+				INFOPLIST_FILE = "JsonCompletor/JsonCompletor-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = JsonCompletor;
 				PROVISIONING_PROFILE = "";
@@ -299,8 +301,8 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AutomaticCoder/JsonCompletor-Prefix.pch";
-				INFOPLIST_FILE = "AutomaticCoder/JsonCompletor-Info.plist";
+				GCC_PREFIX_HEADER = "JsonCompletor/JsonCompletor-Prefix.pch";
+				INFOPLIST_FILE = "JsonCompletor/JsonCompletor-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = JsonCompletor;
 				PROVISIONING_PROFILE = "";

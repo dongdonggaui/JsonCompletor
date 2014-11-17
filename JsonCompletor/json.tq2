@@ -5,6 +5,8 @@
 //  Created by huangluyang automatic coder
 //  Copyright (c) 2014年 huangluyang. All rights reserved.
 //
+
+#import "NSObject+TQAddition.h"
 #import "#name#.h"
 
 @implementation #name#

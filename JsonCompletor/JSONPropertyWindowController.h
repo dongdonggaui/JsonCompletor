@@ -1,9 +1,9 @@
 //
 //  JSONPropertyWindowController.h
-//  AutomaticCoder
+//  JsonCompletor
 //
-//  Created by 张 玺 on 12-8-22.
-//  Copyright (c) 2012年 me.zhangxi. All rights reserved.
+//  Created by huangluyang on 14-11-13.
+//  Copyright (c) 2014年 huangluyang. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

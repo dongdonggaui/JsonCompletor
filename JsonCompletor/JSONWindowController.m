@@ -1,9 +1,9 @@
 //
 //  JSONWindowController.m
-//  AutomaticCoder
+//  JsonCompletor
 //
-//  Created by 张 玺 on 12-8-20.
-//  Copyright (c) 2012年 me.zhangxi. All rights reserved.
+//  Created by huangluyang on 14-11-13.
+//  Copyright (c) 2014年 huangluyang. All rights reserved.
 //
 
 #import "JSONWindowController.h"
@@ -126,8 +126,13 @@
         JsonValueType type = [self type:[json objectForKey:key]];
         switch (type) {
             case kString:
+                [config appendFormat:@"self.%@%@ = [json tq_validStringForKey:@\"%@\"];\n\t\t\t", preName.stringValue, propertyName, key];
+                [encode appendFormat:@"[aCoder encodeObject:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
+                [decode appendFormat:@"self.%@%@ = [aDecoder decodeObjectForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
+                [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];
+                break;
             case kNumber:
-                [config appendFormat:@"self.%@%@ = [json objectForKey:@\"%@\"];\n\t\t\t", preName.stringValue, propertyName, key];
+                [config appendFormat:@"self.%@%@ = [json tq_validNumberForKey:@\"%@\"];\n\t\t\t", preName.stringValue, propertyName, key];
                 [encode appendFormat:@"[aCoder encodeObject:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
                 [decode appendFormat:@"self.%@%@ = [aDecoder decodeObjectForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
                 [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];
@@ -137,9 +142,9 @@
                 if([self isDataArray:[json objectForKey:key]])
                 {
                     [config appendFormat:@"self.%@%@ = [NSMutableArray array];\n", preName.stringValue, propertyName];
-                    [config appendFormat:@"\t\t\tfor(NSDictionary *item in [json objectForKey:@\"%@\"])\n", key];
+                    [config appendFormat:@"\t\t\tfor(NSDictionary *item in [json tq_validArrayForKey:@\"%@\"])\n", key];
                     [config appendString:@"\t\t\t{\n"];
-                    [config appendFormat:@"\t\t\t\t[self.%@%@ addObject:[[%@Entity alloc] initWithJson:item]];\n", preName.stringValue, propertyName, [self uppercaseFirstChar:propertyName]];
+                    [config appendFormat:@"\t\t\t\t[self.%@%@ tq_addSafeObject:[[%@Entity alloc] initWithJson:item]];\n", preName.stringValue, propertyName, [self uppercaseFirstChar:propertyName]];
                     [config appendString:@"\t\t\t}\n\t\t\t"];
                     [encode appendFormat:@"[aCoder encodeObject:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
                     [decode appendFormat:@"self.%@%@ = [aDecoder decodeObjectForKey:@\"tq_%@\"];\n\t\t",  preName.stringValue, propertyName,key];
@@ -148,14 +153,14 @@
             }
                 break;
             case kDictionary:
-                [config appendFormat:@"self.%@%@ = [[%@Entity alloc] initWithJson:[json objectForKey:@\"%@\"]];\n\t\t\t", preName.stringValue, propertyName, [self uppercaseFirstChar:propertyName], key];
+                [config appendFormat:@"self.%@%@ = [[%@Entity alloc] initWithJson:[json tq_validDictionaryForKey:@\"%@\"]];\n\t\t\t", preName.stringValue, propertyName, [self uppercaseFirstChar:propertyName], key];
                 [encode appendFormat:@"[aCoder encodeObject:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
                 [decode appendFormat:@"self.%@%@ = [aDecoder decodeObjectForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
                 [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];
                 
                 break;
             case kBool:
-                [config appendFormat:@"self.%@%@ = [[json objectForKey:@\"%@\"]boolValue];\n\t\t\t", preName.stringValue, propertyName, key];
+                [config appendFormat:@"self.%@%@ = [[json tq_validNumberForKey:@\"%@\"] boolValue];\n\t\t\t", preName.stringValue, propertyName, key];
                 [encode appendFormat:@"[aCoder encodeBool:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
                 [decode appendFormat:@"self.%@%@ = [aDecoder decodeBoolForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
                 [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@?@\"yes\":@\"no\"];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];
@@ -192,7 +197,7 @@
 
 
 - (IBAction)useTestURL:(id)sender {
-    jsonURL.stringValue = @"http://zxapi.sinaapp.com";
+    jsonURL.stringValue = @"";
 }
 
 - (IBAction)getJSONWithURL:(id)sender {
