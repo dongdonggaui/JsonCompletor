@@ -1,0 +1,20 @@
+//
+//
+//  AutomaticCoder
+//
+//  Created by huangluyang automatic coder
+//  Copyright (c) 2014年 huangluyang. All rights reserved.
+//
+
+
+#import <Foundation/Foundation.h>
+#import#
+
+@interface #name# : NSObject<NSCoding>
+
+#property#
+
+
+-(id)initWithJson:(NSDictionary *)json;
+
+@end
