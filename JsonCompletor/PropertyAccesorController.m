@@ -58,27 +58,24 @@
     }
     propertyListString = [propertyListString substringWithRange:range];
     
-    NSArray *propertyListComponents = [propertyListString componentsSeparatedByString:@"\n"];
-    for (NSString *propertyListEntity in propertyListComponents) {
-        NSRegularExpression *regex2 = [NSRegularExpression regularExpressionWithPattern:@"@property([\\s\\S]*);" options:0 error:nil];
-        NSArray *propertyCheckResults = [regex2 matchesInString:propertyListEntity options:0 range:NSMakeRange(0, propertyListEntity.length)];
-        for (NSTextCheckingResult *result in propertyCheckResults) {
-            NSString *propertyString = [propertyListEntity substringWithRange:result.range];
-            PropertyAccessorInfo *propertyInfo = [[PropertyAccessorInfo alloc] init];
-            NSArray *propertyComponents = [propertyString componentsSeparatedByString:@" "];
-            if (propertyComponents.count != 5) {
-                self.outputTextView.string = @"property wrong format";
-                return;
-            }
-            propertyInfo.className = [propertyComponents objectAtIndex:3];
-            NSString *propertyName = [propertyComponents objectAtIndex:4];
-            propertyInfo.hasAsterisk = [propertyName hasPrefix:@"*"];
-            if (propertyInfo.hasAsterisk) {
-                propertyName = [propertyName substringFromIndex:1];
-            }
-            propertyInfo.propertyName = [propertyName substringToIndex:propertyName.length - 1];
-            [self.properties addObject:propertyInfo];
+    NSRegularExpression *regex2 = [NSRegularExpression regularExpressionWithPattern:@"@property ([a-zA-Z0-9,\\*\\(\\) ]*);" options:NSRegularExpressionCaseInsensitive error:nil];
+    NSArray *propertyCheckResults = [regex2 matchesInString:propertyListString options:NSMatchingReportCompletion range:NSMakeRange(0, propertyListString.length)];
+    for (NSTextCheckingResult *result in propertyCheckResults) {
+        NSString *propertyString = [propertyListString substringWithRange:result.range];
+        PropertyAccessorInfo *propertyInfo = [[PropertyAccessorInfo alloc] init];
+        NSArray *propertyComponents = [propertyString componentsSeparatedByString:@" "];
+        if (propertyComponents.count != 5) {
+            self.outputTextView.string = @"property wrong format";
+            return;
         }
+        propertyInfo.className = [propertyComponents objectAtIndex:3];
+        NSString *propertyName = [propertyComponents objectAtIndex:4];
+        propertyInfo.hasAsterisk = [propertyName hasPrefix:@"*"];
+        if (propertyInfo.hasAsterisk) {
+            propertyName = [propertyName substringFromIndex:1];
+        }
+        propertyInfo.propertyName = [propertyName substringToIndex:propertyName.length - 1];
+        [self.properties addObject:propertyInfo];
     }
     
     for (PropertyAccessorInfo *info in self.properties) {
