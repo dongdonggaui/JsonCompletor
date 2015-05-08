@@ -126,13 +126,13 @@
         JsonValueType type = [self type:[json objectForKey:key]];
         switch (type) {
             case kString:
-                [config appendFormat:@"self.%@%@ = [json tq_validStringForKey:@\"%@\"];\n\t\t\t", preName.stringValue, propertyName, key];
-                [encode appendFormat:@"[aCoder encodeObject:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
-                [decode appendFormat:@"self.%@%@ = [aDecoder decodeObjectForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
-                [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];
-                break;
+//                [config appendFormat:@"self.%@%@ = [json tq_validStringForKey:@\"%@\"];\n\t\t\t", preName.stringValue, propertyName, key];
+//                [encode appendFormat:@"[aCoder encodeObject:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
+//                [decode appendFormat:@"self.%@%@ = [aDecoder decodeObjectForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
+//                [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];
+//                break;
             case kNumber:
-                [config appendFormat:@"self.%@%@ = [json tq_validNumberForKey:@\"%@\"];\n\t\t\t", preName.stringValue, propertyName, key];
+                [config appendFormat:@"self.%@%@ = [json tq_safeObjectForKey:@\"%@\"];\n\t\t\t", preName.stringValue, propertyName, key];
                 [encode appendFormat:@"[aCoder encodeObject:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
                 [decode appendFormat:@"self.%@%@ = [aDecoder decodeObjectForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
                 [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];
@@ -160,7 +160,7 @@
                 
                 break;
             case kBool:
-                [config appendFormat:@"self.%@%@ = [[json tq_validNumberForKey:@\"%@\"] boolValue];\n\t\t\t", preName.stringValue, propertyName, key];
+                [config appendFormat:@"self.%@%@ = [[json tq_safeObjectForKey:@\"%@\"] boolValue];\n\t\t\t", preName.stringValue, propertyName, key];
                 [encode appendFormat:@"[aCoder encodeBool:self.%@%@ forKey:@\"tq_%@\"];\n\t", preName.stringValue, propertyName, key];
                 [decode appendFormat:@"self.%@%@ = [aDecoder decodeBoolForKey:@\"tq_%@\"];\n\t\t", preName.stringValue, propertyName, key];
                 [description appendFormat:@"result = [result stringByAppendingFormat:@\"%@%@ : %%@\\n\",self.%@%@?@\"yes\":@\"no\"];\n\t", preName.stringValue, propertyName, preName.stringValue, propertyName];

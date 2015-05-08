@@ -20,6 +20,8 @@
 		095C49021A19CA5600C8EF65 /* JSONWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095C48F61A19CA5600C8EF65 /* JSONWindowController.xib */; };
 		095C49031A19CA5600C8EF65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C48F71A19CA5600C8EF65 /* main.m */; };
 		09BE794B1A160C4500C9BAA4 /* caicai.icns in Resources */ = {isa = PBXBuildFile; fileRef = 09BE794A1A160C4500C9BAA4 /* caicai.icns */; };
+		09CD2EB21AFC960700968F95 /* PropertyAccesorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CD2EB01AFC960700968F95 /* PropertyAccesorController.m */; };
+		09CD2EB31AFC960700968F95 /* PropertyAccesorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CD2EB11AFC960700968F95 /* PropertyAccesorController.xib */; };
 		438EDC2815E1D08700D6B752 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438EDC2715E1D08700D6B752 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,9 @@
 		095C48F61A19CA5600C8EF65 /* JSONWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSONWindowController.xib; sourceTree = "<group>"; };
 		095C48F71A19CA5600C8EF65 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09BE794A1A160C4500C9BAA4 /* caicai.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = caicai.icns; sourceTree = "<group>"; };
+		09CD2EAF1AFC960700968F95 /* PropertyAccesorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyAccesorController.h; sourceTree = "<group>"; };
+		09CD2EB01AFC960700968F95 /* PropertyAccesorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyAccesorController.m; sourceTree = "<group>"; };
+		09CD2EB11AFC960700968F95 /* PropertyAccesorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyAccesorController.xib; sourceTree = "<group>"; };
 		438EDC2315E1D08700D6B752 /* JsonCompletor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonCompletor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438EDC2715E1D08700D6B752 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		438EDC2A15E1D08700D6B752 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -76,6 +81,9 @@
 				095C48F31A19CA5600C8EF65 /* JSONPropertyWindowController.xib */,
 				095C48F41A19CA5600C8EF65 /* JSONWindowController.h */,
 				095C48F51A19CA5600C8EF65 /* JSONWindowController.m */,
+				09CD2EAF1AFC960700968F95 /* PropertyAccesorController.h */,
+				09CD2EB01AFC960700968F95 /* PropertyAccesorController.m */,
+				09CD2EB11AFC960700968F95 /* PropertyAccesorController.xib */,
 				095C48F61A19CA5600C8EF65 /* JSONWindowController.xib */,
 				095C49041A19CA8100C8EF65 /* Supporting Files */,
 			);
@@ -185,6 +193,7 @@
 				095C48FB1A19CA5600C8EF65 /* json.tq1 in Resources */,
 				095C49021A19CA5600C8EF65 /* JSONWindowController.xib in Resources */,
 				095C48FC1A19CA5600C8EF65 /* json.tq2 in Resources */,
+				09CD2EB31AFC960700968F95 /* PropertyAccesorController.xib in Resources */,
 				09BE794B1A160C4500C9BAA4 /* caicai.icns in Resources */,
 				095C49001A19CA5600C8EF65 /* JSONPropertyWindowController.xib in Resources */,
 				095C48FD1A19CA5600C8EF65 /* JsonCompletor-Info.plist in Resources */,
@@ -202,6 +211,7 @@
 				095C49031A19CA5600C8EF65 /* main.m in Sources */,
 				095C48F81A19CA5600C8EF65 /* AppDelegate.m in Sources */,
 				095C48FF1A19CA5600C8EF65 /* JSONPropertyWindowController.m in Sources */,
+				09CD2EB21AFC960700968F95 /* PropertyAccesorController.m in Sources */,
 				095C49011A19CA5600C8EF65 /* JSONWindowController.m in Sources */,
 				095C48FE1A19CA5600C8EF65 /* JSONKit.m in Sources */,
 			);

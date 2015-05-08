@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PropertyAccesorController">
+            <connections>
+                <outlet property="inputTextView" destination="35c-EF-jKS" id="H0W-tw-Yng"/>
+                <outlet property="outputTextView" destination="9V7-lc-oQI" id="qKo-vT-tn8"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="1178" height="612"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="1178" height="612"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuI-71-bMf">
+                        <rect key="frame" x="20" y="20" width="515" height="572"/>
+                        <clipView key="contentView" id="snK-Yd-Fyh">
+                            <rect key="frame" x="1" y="1" width="659" height="314"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" spellingCorrection="YES" smartInsertDelete="YES" id="35c-EF-jKS">
+                                    <rect key="frame" x="0.0" y="0.0" width="659" height="422"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="513" height="570"/>
+                                    <size key="maxSize" width="967" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment>
+                                            <string key="content">copy .m here
+===================
+1.</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="28.299999237060547"/>
+                                                        <textTab alignment="left" location="56.650001525878906"/>
+                                                        <textTab alignment="left" location="85"/>
+                                                        <textTab alignment="left" location="113.34999847412109"/>
+                                                        <textTab alignment="left" location="141.69999694824219"/>
+                                                        <textTab alignment="left" location="170.05000305175781"/>
+                                                        <textTab alignment="left" location="198.39999389648438"/>
+                                                        <textTab alignment="left" location="226.75"/>
+                                                        <textTab alignment="left" location="255.10000610351562"/>
+                                                        <textTab alignment="left" location="283.45001220703125"/>
+                                                        <textTab alignment="left" location="311.79998779296875"/>
+                                                        <textTab alignment="left" location="340.14999389648438"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">在把.m文件内容复制到此处。
+2.仅生成ARC存取器</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="28.299999237060547"/>
+                                                        <textTab alignment="left" location="56.650001525878906"/>
+                                                        <textTab alignment="left" location="85"/>
+                                                        <textTab alignment="left" location="113.34999847412109"/>
+                                                        <textTab alignment="left" location="141.69999694824219"/>
+                                                        <textTab alignment="left" location="170.05000305175781"/>
+                                                        <textTab alignment="left" location="198.39999389648438"/>
+                                                        <textTab alignment="left" location="226.75"/>
+                                                        <textTab alignment="left" location="255.10000610351562"/>
+                                                        <textTab alignment="left" location="283.45001220703125"/>
+                                                        <textTab alignment="left" location="311.79998779296875"/>
+                                                        <textTab alignment="left" location="340.14999389648438"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="513" height="570"/>
+                                    <size key="maxSize" width="967" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="YKm-0O-M2F">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="BBd-Wp-T9q">
+                            <rect key="frame" x="644" y="1" width="16" height="314"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRf-I3-4Vj">
+                        <rect key="frame" x="644" y="20" width="514" height="572"/>
+                        <clipView key="contentView" id="GYy-60-QzX">
+                            <rect key="frame" x="1" y="1" width="659" height="314"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" spellingCorrection="YES" smartInsertDelete="YES" id="9V7-lc-oQI">
+                                    <rect key="frame" x="0.0" y="0.0" width="659" height="422"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="512" height="570"/>
+                                    <size key="maxSize" width="901" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment content="新">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="28.299999237060547"/>
+                                                        <textTab alignment="left" location="56.650001525878906"/>
+                                                        <textTab alignment="left" location="85"/>
+                                                        <textTab alignment="left" location="113.34999847412109"/>
+                                                        <textTab alignment="left" location="141.69999694824219"/>
+                                                        <textTab alignment="left" location="170.05000305175781"/>
+                                                        <textTab alignment="left" location="198.39999389648438"/>
+                                                        <textTab alignment="left" location="226.75"/>
+                                                        <textTab alignment="left" location="255.10000610351562"/>
+                                                        <textTab alignment="left" location="283.45001220703125"/>
+                                                        <textTab alignment="left" location="311.79998779296875"/>
+                                                        <textTab alignment="left" location="340.14999389648438"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=".m">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="28.299999237060547"/>
+                                                        <textTab alignment="left" location="56.650001525878906"/>
+                                                        <textTab alignment="left" location="85"/>
+                                                        <textTab alignment="left" location="113.34999847412109"/>
+                                                        <textTab alignment="left" location="141.69999694824219"/>
+                                                        <textTab alignment="left" location="170.05000305175781"/>
+                                                        <textTab alignment="left" location="198.39999389648438"/>
+                                                        <textTab alignment="left" location="226.75"/>
+                                                        <textTab alignment="left" location="255.10000610351562"/>
+                                                        <textTab alignment="left" location="283.45001220703125"/>
+                                                        <textTab alignment="left" location="311.79998779296875"/>
+                                                        <textTab alignment="left" location="340.14999389648438"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="文件输出">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="28.299999237060547"/>
+                                                        <textTab alignment="left" location="56.650001525878906"/>
+                                                        <textTab alignment="left" location="85"/>
+                                                        <textTab alignment="left" location="113.34999847412109"/>
+                                                        <textTab alignment="left" location="141.69999694824219"/>
+                                                        <textTab alignment="left" location="170.05000305175781"/>
+                                                        <textTab alignment="left" location="198.39999389648438"/>
+                                                        <textTab alignment="left" location="226.75"/>
+                                                        <textTab alignment="left" location="255.10000610351562"/>
+                                                        <textTab alignment="left" location="283.45001220703125"/>
+                                                        <textTab alignment="left" location="311.79998779296875"/>
+                                                        <textTab alignment="left" location="340.14999389648438"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="512" height="570"/>
+                                    <size key="maxSize" width="901" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Vkw-pJ-LSQ">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="IRd-RH-z8W">
+                            <rect key="frame" x="644" y="1" width="16" height="314"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="UVP-Od-tFu">
+                        <rect key="frame" x="541" y="293" width="97" height="25"/>
+                        <buttonCell key="cell" type="bevel" title="Auto Complete" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mdZ-ij-jG6">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="compete:" target="-2" id="nM7-Bm-qY6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NuI-71-bMf" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="Cwj-Vw-swI"/>
+                    <constraint firstItem="NuI-71-bMf" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="DDF-Hy-GaX"/>
+                    <constraint firstAttribute="centerX" secondItem="UVP-Od-tFu" secondAttribute="centerX" id="Di8-Pg-cig"/>
+                    <constraint firstAttribute="bottom" secondItem="eRf-I3-4Vj" secondAttribute="bottom" constant="20" symbolic="YES" id="HfU-x2-CG7"/>
+                    <constraint firstItem="eRf-I3-4Vj" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="HzI-UR-vmh"/>
+                    <constraint firstItem="eRf-I3-4Vj" firstAttribute="leading" secondItem="UVP-Od-tFu" secondAttribute="trailing" constant="8" symbolic="YES" id="Idn-0e-3q7"/>
+                    <constraint firstAttribute="centerY" secondItem="UVP-Od-tFu" secondAttribute="centerY" id="Wec-D3-SY5"/>
+                    <constraint firstAttribute="trailing" secondItem="eRf-I3-4Vj" secondAttribute="trailing" constant="20" symbolic="YES" id="aOp-3k-Yy6"/>
+                    <constraint firstAttribute="bottom" secondItem="NuI-71-bMf" secondAttribute="bottom" constant="20" symbolic="YES" id="d9b-Cm-MM0"/>
+                    <constraint firstItem="UVP-Od-tFu" firstAttribute="leading" secondItem="NuI-71-bMf" secondAttribute="trailing" constant="8" symbolic="YES" id="t0S-8V-d0T"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="421" y="438"/>
+        </window>
+    </objects>
+</document>

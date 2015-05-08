@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "PropertyAccesorController.h"
 
 @implementation AppDelegate
 
@@ -15,13 +15,14 @@
 {
     if(flag == NO)
     {
-//        [self.window makeKeyAndOrderFront:nil];
+        [self.window makeKeyAndOrderFront:nil];
     }
     return YES;
 }
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self json:nil];
+//    [self json:nil];
+    
 }
 - (NSString *) description
 {
@@ -39,4 +40,20 @@
 - (IBAction)donate:(id)sender {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://zxapi.sinaapp.com/paypal.html"]];
 }
+
+- (IBAction)propertyAccessor:(id)sender {
+    
+    [[self.property window] makeKeyAndOrderFront:nil];
+}
+
+- (PropertyAccesorController *)property
+{
+    if (!_property) {
+        _property = [[PropertyAccesorController alloc] initWithWindowNibName:@"PropertyAccesorController"];
+    }
+    
+    return _property;
+}
+
+
 @end
