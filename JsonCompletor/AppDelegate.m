@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "PropertyAccesorController.h"
 
 @implementation AppDelegate
 
@@ -46,6 +45,11 @@
     [[self.property window] makeKeyAndOrderFront:nil];
 }
 
+- (IBAction)swiftPropertyAccessor:(id)sender {
+    
+    [[self.swiftProperty window] makeKeyAndOrderFront:nil];
+}
+
 - (PropertyAccesorController *)property
 {
     if (!_property) {
@@ -55,5 +59,13 @@
     return _property;
 }
 
+- (SwiftPropertyAccessorController *)swiftProperty
+{
+    if (!_swiftProperty) {
+        _swiftProperty = [[SwiftPropertyAccessorController alloc] initWithWindowNibName:@"SwiftPropertyAccessorController"];
+    }
+    
+    return _swiftProperty;
+}
 
 @end

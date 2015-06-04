@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "JSONWindowController.h"
 #import "PropertyAccesorController.h"
+#import "SwiftPropertyAccessorController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
@@ -19,6 +20,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, strong) PropertyAccesorController *property;
+@property (nonatomic, strong) SwiftPropertyAccessorController *swiftProperty;
 
 
 - (IBAction)json:(id)sender;

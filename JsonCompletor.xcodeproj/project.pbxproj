@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090E9E651B1FFF35008D05F4 /* SwiftPropertyAccessorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E9E631B1FFF35008D05F4 /* SwiftPropertyAccessorController.m */; };
+		090E9E661B1FFF35008D05F4 /* SwiftPropertyAccessorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 090E9E641B1FFF35008D05F4 /* SwiftPropertyAccessorController.xib */; };
 		095C48F81A19CA5600C8EF65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095C48E61A19CA5600C8EF65 /* AppDelegate.m */; };
 		095C48F91A19CA5600C8EF65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 095C48E71A19CA5600C8EF65 /* InfoPlist.strings */; };
 		095C48FA1A19CA5600C8EF65 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095C48E91A19CA5600C8EF65 /* MainMenu.xib */; };
@@ -26,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090E9E621B1FFF35008D05F4 /* SwiftPropertyAccessorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftPropertyAccessorController.h; sourceTree = "<group>"; };
+		090E9E631B1FFF35008D05F4 /* SwiftPropertyAccessorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftPropertyAccessorController.m; sourceTree = "<group>"; };
+		090E9E641B1FFF35008D05F4 /* SwiftPropertyAccessorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftPropertyAccessorController.xib; sourceTree = "<group>"; };
 		095C48E51A19CA5600C8EF65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		095C48E61A19CA5600C8EF65 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		095C48E81A19CA5600C8EF65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -84,6 +89,9 @@
 				09CD2EAF1AFC960700968F95 /* PropertyAccesorController.h */,
 				09CD2EB01AFC960700968F95 /* PropertyAccesorController.m */,
 				09CD2EB11AFC960700968F95 /* PropertyAccesorController.xib */,
+				090E9E621B1FFF35008D05F4 /* SwiftPropertyAccessorController.h */,
+				090E9E631B1FFF35008D05F4 /* SwiftPropertyAccessorController.m */,
+				090E9E641B1FFF35008D05F4 /* SwiftPropertyAccessorController.xib */,
 				095C48F61A19CA5600C8EF65 /* JSONWindowController.xib */,
 				095C49041A19CA8100C8EF65 /* Supporting Files */,
 			);
@@ -198,6 +206,7 @@
 				095C49001A19CA5600C8EF65 /* JSONPropertyWindowController.xib in Resources */,
 				095C48FD1A19CA5600C8EF65 /* JsonCompletor-Info.plist in Resources */,
 				095C48FA1A19CA5600C8EF65 /* MainMenu.xib in Resources */,
+				090E9E661B1FFF35008D05F4 /* SwiftPropertyAccessorController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				095C49031A19CA5600C8EF65 /* main.m in Sources */,
+				090E9E651B1FFF35008D05F4 /* SwiftPropertyAccessorController.m in Sources */,
 				095C48F81A19CA5600C8EF65 /* AppDelegate.m in Sources */,
 				095C48FF1A19CA5600C8EF65 /* JSONPropertyWindowController.m in Sources */,
 				09CD2EB21AFC960700968F95 /* PropertyAccesorController.m in Sources */,
