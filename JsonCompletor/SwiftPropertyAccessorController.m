@@ -60,14 +60,14 @@
             self.outputTextView.string = @"property wrong format";
             return;
         }
-        propertyInfo.className = [propertyComponents objectAtIndex:3];
+        propertyInfo.className = [[propertyComponents objectAtIndex:3] stringByReplacingOccurrencesOfString:@"?" withString:@""];
         NSString *propertyName = [[[propertyComponents objectAtIndex:2] stringByReplacingOccurrencesOfString:@"_" withString:@""] stringByReplacingOccurrencesOfString:@":" withString:@""];
         propertyInfo.propertyName = propertyName;
         [self.properties addObject:propertyInfo];
     }
     
     for (SwiftPropertyAccessorInfo *info in self.properties) {
-        [codeText appendFormat:@"\n\tvar %@: %@ {\n", info.className, info.propertyName];
+        [codeText appendFormat:@"\n\tvar %@: %@ {\n", info.propertyName, info.className];
         [codeText appendFormat:@"\t\tif _%@ == nil {\n", info.propertyName];
         [codeText appendFormat:@"\t\t\t_%@ = %@()\n", info.propertyName, info.className];
         [codeText appendString:@"\t\t\t<#initialize#>\n"];
